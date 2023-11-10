@@ -129,13 +129,15 @@ function App() {
       <Box></Box>
       <img src={logo} alt="Attobahn logo" />
       <br/><br /> <br/><br />
-      <Box sx={{display: "flex",justifyContent:"center", gap: 15}}>
+      <Box sx={{display: "flex",justifyContent:"center", gap: 4}}>
       <Button target="_blank"
    component="a"
-   href={`https://creatorapp.zohopublic.com/jamieenglish70/writter-data-collection/form-perma/Scope_Of_Work/tGC7PrtT473VAxdgY6mb1xpBmveb8TmxJxpWVdAEVgeg58PqZxUz8RV8szYdjfefJbnAuh7kPxSuKCj3QwHEyHOVB9ZKzmpRnkMt?PA_ID=${recordId}`}>Scope of Work</Button>
+   variant="contained"
+   href={`https://creatorapp.zohopublic.com/jamieenglish70/writter-data-collection/form-perma/Scope_Of_Work/tGC7PrtT473VAxdgY6mb1xpBmveb8TmxJxpWVdAEVgeg58PqZxUz8RV8szYdjfefJbnAuh7kPxSuKCj3QwHEyHOVB9ZKzmpRnkMt?PA_ID=${recordId}`}>Add Scope of Work</Button>
       <Button target="_blank"
    component="a"
-   href={`https://creatorapp.zohopublic.com/jamieenglish70/writter-data-collection/form-perma/Terms_And_Conditions/hZUCd2zpY9a0HsPeZtg9GPQ6XBMW7twGmZrV3MTvjA2qU661xT2QEQ0hmkmYDYMGS1q9grtNwJFVFjSjAEtNv4jgSQ2hXptDpvZy?PA_ID=${recordId}`}>Terms & Conditions</Button>
+   variant="contained"
+   href={`https://creatorapp.zohopublic.com/jamieenglish70/writter-data-collection/form-perma/Terms_And_Conditions/hZUCd2zpY9a0HsPeZtg9GPQ6XBMW7twGmZrV3MTvjA2qU661xT2QEQ0hmkmYDYMGS1q9grtNwJFVFjSjAEtNv4jgSQ2hXptDpvZy?PA_ID=${recordId}`}>Add Terms & Conditions</Button>
       </Box>
       <br />
       <br />
