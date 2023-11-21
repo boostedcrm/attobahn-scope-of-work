@@ -124,59 +124,77 @@ function App() {
     });
   };
 
-  return (
-    <Box>
-      <Box></Box>
-      <img src={logo} alt="Attobahn logo" />
-      <br/><br /> <br/><br />
-      <Box sx={{display: "flex",justifyContent:"center", gap: 4}}>
-      <Button target="_blank"
-   component="a"
-   variant="contained"
-   href={`https://creatorapp.zohopublic.com/jamieenglish70/writter-data-collection/form-perma/Scope_Of_Work/tGC7PrtT473VAxdgY6mb1xpBmveb8TmxJxpWVdAEVgeg58PqZxUz8RV8szYdjfefJbnAuh7kPxSuKCj3QwHEyHOVB9ZKzmpRnkMt?PA_ID=${recordId}`}>Add Scope of Work</Button>
-      <Button target="_blank"
-   component="a"
-   variant="contained"
-   href={`https://creatorapp.zohopublic.com/jamieenglish70/writter-data-collection/form-perma/Terms_And_Conditions/hZUCd2zpY9a0HsPeZtg9GPQ6XBMW7twGmZrV3MTvjA2qU661xT2QEQ0hmkmYDYMGS1q9grtNwJFVFjSjAEtNv4jgSQ2hXptDpvZy?PA_ID=${recordId}`}>Add Terms & Conditions</Button>
+  const [showScopeOfWork, setShowScopeOfWork] = useState(false);
+  const [showTerms, setShowTerms] = useState(false);
+
+  if (showScopeOfWork) {
+    return (
+      <Box>
+        <iframe
+          height="700px"
+          width="100%"
+          frameborder="0"
+          allowTransparency="true"
+          scrolling="auto"
+          src="https://creatorapp.zohopublic.com/jamieenglish70/writter-data-collection/form-embed/Scope_Of_Work/tGC7PrtT473VAxdgY6mb1xpBmveb8TmxJxpWVdAEVgeg58PqZxUz8RV8szYdjfefJbnAuh7kPxSuKCj3QwHEyHOVB9ZKzmpRnkMt?PA_ID=+recordid"
+        ></iframe>
+        <Button variant="contained" onClick={() => setShowScopeOfWork(false)}>
+          Go Back
+        </Button>
       </Box>
-      <br />
-      <br />
-      <input
-        type="file"
-        onChange={(e) => {
-          setFile(e.target.files[0]);
-        }}
-      />
-      {/* {selectedFile && <img src={preview} />} */}
-      {/* <Button
-        component="label"
-        variant="contained"
-        startIcon={<CloudUploadIcon />}
-        sx={{marginRight: "10px"}}
-        onClick={handleUpload}
-      >
-        Upload file
-        <VisuallyHiddenInput type="file" />
-      </Button> */}
-      <Button
-        component="label"
-        variant="contained"
-        endIcon={<SaveIcon />}
-        color="success"
-        onClick={handleSubmit}
-      >
-        Save
-      </Button>
-      <Button
-        component="label"
-        variant="outlined"
-        onClick={handleClose}
-        sx={{marginLeft: "10px"}}
-      >
-        Cancel
-      </Button>
-    </Box>
-  );
+    );
+  } else if (showTerms) {
+    return (
+      <Box>
+        <iframe
+          height="700px"
+          width="100%"
+          frameborder="0"
+          allowTransparency="true"
+          scrolling="auto"
+          src="https://creatorapp.zohopublic.com/jamieenglish70/writter-data-collection/form-embed/Terms_And_Conditions/hZUCd2zpY9a0HsPeZtg9GPQ6XBMW7twGmZrV3MTvjA2qU661xT2QEQ0hmkmYDYMGS1q9grtNwJFVFjSjAEtNv4jgSQ2hXptDpvZy?PA_ID=+recordid"
+        ></iframe>
+        <Button variant="contained" onClick={() => setShowTerms(false)}>
+          Go Back
+        </Button>
+      </Box>
+    );
+  } else {
+    return (
+      <Box>
+        <img src={logo} alt="Attobahn logo" />
+        <br />
+        <br /> <br />
+        <br />
+        <Box sx={{ display: "flex", justifyContent: "center", gap: 4 }}>
+          <Button variant="contained" onClick={() => setShowScopeOfWork(true)}>
+            Add Scope of Work
+          </Button>
+          <Button variant="contained" onClick={() => setShowTerms(true)}>
+            Add Terms & Conditions
+          </Button>
+        </Box>
+        <br /> <br />
+        <Button
+          component="label"
+          variant="contained"
+          endIcon={<SaveIcon />}
+          color="success"
+          onClick={handleSubmit}
+        >
+          Save
+        </Button>
+        <Button
+          component="label"
+          variant="outlined"
+          onClick={handleClose}
+          sx={{ marginLeft: "10px" }}
+        >
+          Cancel
+        </Button>
+      </Box>
+    );
+  }
 }
 
 export default App;
