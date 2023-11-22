@@ -1,6 +1,5 @@
 import "./App.css";
 import { Box, Typography } from "@mui/material";
-import styled from "styled-components";
 import HighlightOffOutlinedIcon from "@mui/icons-material/HighlightOffOutlined";
 import { useEffect, useState } from "react";
 
