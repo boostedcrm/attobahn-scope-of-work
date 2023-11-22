@@ -136,7 +136,7 @@ function App() {
           frameborder="0"
           allowTransparency="true"
           scrolling="auto"
-          src="https://creatorapp.zohopublic.com/jamieenglish70/writter-data-collection/form-embed/Scope_Of_Work/tGC7PrtT473VAxdgY6mb1xpBmveb8TmxJxpWVdAEVgeg58PqZxUz8RV8szYdjfefJbnAuh7kPxSuKCj3QwHEyHOVB9ZKzmpRnkMt?PA_ID=+recordid"
+          src={`https://creatorapp.zohopublic.com/jamieenglish70/writter-data-collection/form-embed/Scope_Of_Work/tGC7PrtT473VAxdgY6mb1xpBmveb8TmxJxpWVdAEVgeg58PqZxUz8RV8szYdjfefJbnAuh7kPxSuKCj3QwHEyHOVB9ZKzmpRnkMt?PA_ID=${recordId}`}
         ></iframe>
         <Button variant="contained" onClick={() => setShowScopeOfWork(false)}>
           Go Back
@@ -152,7 +152,7 @@ function App() {
           frameborder="0"
           allowTransparency="true"
           scrolling="auto"
-          src="https://creatorapp.zohopublic.com/jamieenglish70/writter-data-collection/form-embed/Terms_And_Conditions/hZUCd2zpY9a0HsPeZtg9GPQ6XBMW7twGmZrV3MTvjA2qU661xT2QEQ0hmkmYDYMGS1q9grtNwJFVFjSjAEtNv4jgSQ2hXptDpvZy?PA_ID=+recordid"
+          src={`https://creatorapp.zohopublic.com/jamieenglish70/writter-data-collection/form-embed/Terms_And_Conditions/hZUCd2zpY9a0HsPeZtg9GPQ6XBMW7twGmZrV3MTvjA2qU661xT2QEQ0hmkmYDYMGS1q9grtNwJFVFjSjAEtNv4jgSQ2hXptDpvZy?PA_ID=${recordId}`}
         ></iframe>
         <Button variant="contained" onClick={() => setShowTerms(false)}>
           Go Back
