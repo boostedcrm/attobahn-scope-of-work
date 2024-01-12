@@ -1,6 +1,5 @@
 import "./App.css";
 import { Box, Button, Typography } from "@mui/material";
-import HighlightOffOutlinedIcon from "@mui/icons-material/HighlightOffOutlined";
 import { useEffect, useState } from "react";
 
 const ZOHO = window.ZOHO;
@@ -46,10 +45,6 @@ function App() {
             src={`https://creatorapp.zohopublic.com/jamieenglish70/writter-data-collection/form-embed/Scope_Of_Work/tGC7PrtT473VAxdgY6mb1xpBmveb8TmxJxpWVdAEVgeg58PqZxUz8RV8szYdjfefJbnAuh7kPxSuKCj3QwHEyHOVB9ZKzmpRnkMt?PA_ID=${recordId}`}
           ></iframe>
           <Box sx={{ display: "flex", justifyContent: "center", my: 1, mr: 1 }}>
-            {/* <HighlightOffOutlinedIcon
-              onClick={handleClose}
-              sx={{ fontSize: 30, cursor: "pointer" }}
-            /> */}
             <Button
               onClick={handleClose}
               sx={{
@@ -62,7 +57,7 @@ function App() {
               size="small"
               variant="outlined"
             >
-              Cancel
+              Proceed
             </Button>
           </Box>
         </Box>
